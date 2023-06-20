@@ -1,0 +1,48 @@
+
+#user_list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(131.83deg, #fcecec 0%,     #fcf0f0 99.21%);
+    width: 300px;
+    text-align: center;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 16px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    cursor: url(https://assets.digitalocean.com/labs/doicons/general-purpose-droplet.svg?cb=1), url(https://assets.digitalocean.com/labs/doicons/general-purpose-droplet.svg?cb=1), move;
+    font-size: 20px;
+}
+#user_list li:not(:last-child) {
+   
+  }
+
+#user_list li::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background-image: linear-gradient(312.25deg, #ffc4bc 0%,     rgba(255, 255, 255, 0) 66.19%);
+    z-index: -1;
+    border-radius: 18px;
+  }
+
+
+#user_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+#user_list li:hover{
+    width: 310px;
+    transition: all 0.5s linear;
+    font-size: 22px;
+    color: red;
+}
